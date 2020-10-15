@@ -1,0 +1,69 @@
+
+/*Full page color*/
+html {
+  background-color: #aa92bd;
+}
+
+/*Gradient background color that fills page*/
+body {
+    background-image: linear-gradient(to bottom, #e7e4f1, #aa92bd);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: fill;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/*Color and font of most content*/
+p, li{
+    color: #2e3b24;
+    font-size: 18px;
+}
+
+/*Spacing between links in nav*/
+nav a {
+    text-align: center;
+    margin: 0;
+    padding-right: 5%;
+    display: inline-block;
+}
+
+/*All link colors*/
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+/*Change link when hovering over*/
+a:hover {
+    text-decoration: underline;
+}
+
+/*Jumbotron formatting*/
+h1 {
+    text-align: center;
+    padding: 3px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/*Jumbotron background color*/
+#Header {
+    background-color: #cbbfd9;
+}
+
+/*Color and font of most content*/
+div {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*Space after content to make room for footer*/
+#Content {
+  margin-bottom: 50px;
+}
+
+/*Align footer in center*/
+footer div{
+    text-align: center;
+}

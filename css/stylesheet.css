@@ -1,0 +1,76 @@
+
+/* On every page */
+body {
+    background-image: linear-gradient(180deg, #e7e4f1, #aa92bd);
+    height: 100vh;
+}
+p, li{
+    color: #2e3b24;
+    font-size: 18px;
+}
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 3%;
+    text-align: center;
+}
+nav a {
+    text-align: center;
+    margin: 0;
+    padding-right: 5%;
+    display: inline-block;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    padding: 3px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* Specific to a page*/
+
+/* Specific to Videos*/
+#Videos {
+    margin-left: 5px;
+    max-width: 650px;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* Specific to Assingments*/
+#Assingments {
+    text-align: center;
+    size: 200%;
+    margin-left: 50px;
+    padding: 20px;
+}
+#Assingments th {
+    padding: 20px;
+}
+
+/* On every page */
+.footer {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: small;
+    font-style: italic;
+    position: fixed;
+    bottom: 3%;
+    border-top: 2px solid black;
+    padding: 3px;
+    color: #2e3b24;
+}
+.footer a {
+    padding-right: 5px;
+}
