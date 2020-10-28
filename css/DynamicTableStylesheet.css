@@ -1,0 +1,56 @@
+
+
+/* Gives background */
+html {
+  background-image: linear-gradient(180deg, #e7e4f1, #aa92bd);
+  background-repeat: repeat-x;
+  background-color: #aa92bd;
+}
+body {
+    background-image: linear-gradient(180deg, #e7e4f1, #aa92bd);
+    background-repeat: repeat-x;
+    background-color: #aa92bd;
+    height: 100vh;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* Margin for form */
+form {
+  margin: 10px;
+}
+
+/* Show input in nice format */
+input {
+  display: block;
+}
+
+/*Border and text align only for the Multiplication Table*/
+#MultTable, #MultTable tr, #MultTable td, #MultTable th{
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+#MultTable {
+  width: 100%;
+}
+
+/*For all tables, set width and overflow */
+table {
+  border-collapse: collapse;
+  width: 50%;
+  overflow: scroll;
+}
+
+tr, td, th{
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  color:black;
+}
+
+th {
+  font-size: medium;
+  background: black;
+  color: white;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+ Cassandra Harkins
+ Cassandra_Harkins@student.uml.edu
+ Student at UMass Lowell in 91.61 GUI Programming I
+-->
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CHarkins Webpage</title>
+    <link rel="stylesheet" type="text/css" href="../css/DynamicTableStylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+<!-- Form that takes information FirstRow/LastRow FirstColumn/LastColumn -->
+    <form id="Form">
+      <table>
+        <tr>
+          <td><label for="FirstRow">Row Min</label>
+            <input type="number" id="FirstRow" min="-50" max="50" value="1"></td>
+          <td><label for="FirstRow">Row Max</label>
+            <input type="number" id="LastRow" min="-50" max="50" value="5"></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="FirstRow">Column Min</label>
+            <input type="number" id="FirstColumn" min="-50" max="50" value="1"></td>
+          <td><label for="FirstRow">Column Max</label>
+            <input type="number" id="LastColumn" min="-50" max="50" value="5"></td>
+        </tr>
+      </table>
+    </form>
+
+<!-- Button that is used to call function and generate table -->
+    <button type="button" onclick="GenerateTable()">Generate Table</button>
+    <p id="Error"></p>
+
+<!-- Default table values that can be overwritten by javascript -->
+    <table id="MultTable">
+      <tr>
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>4</td>
+        <td>8</td>
+        <td>12</td>
+        <td>16</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>5</td>
+        <td>10</td>
+        <td>15</td>
+        <td>20</td>
+        <td>25</td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="DynamicTable.js"></script>
+  </body>
+</html>
