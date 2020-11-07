@@ -1,0 +1,60 @@
+
+/*Files did not come with a css file, so I added one
+Linked it in the Html file because it was not linked before*/
+
+
+body {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  font-size: 80%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
+  border-style: double;
+  max-width: 950px;
+  min-width: 720px;
+
+}
+#logo {
+    padding-bottom:15px;
+}
+
+#navigation {
+  margin: auto;
+  padding: 10px;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px 0px 1px 0px;
+  max-width: 570px;
+}
+#navigation li {
+  display: inline;
+}
+#navigation a {
+  text-decoration: none;
+  padding: 15px;
+  border-width: 6,18,5,18;
+  text-transform: uppercase;
+}
+#navigation a:hover, a:active {
+  color: red;
+}
+#navigation a:link {
+  color: black;
+}
+#navigation a.on {
+  color: red;
+}
+
+#page p img{
+  padding-top: 15px;
+  margin: auto;
+  max-width: 600px;
+}
+
+#page p {
+  padding-bottom: 15px;
+  margin: auto;
+  max-width: 600px;
+}
