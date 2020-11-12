@@ -54,3 +54,20 @@ th {
   background: black;
   color: white;
 }
+
+.error {
+  display: none;
+  color: black;
+}
+.error_show {
+  display: inline;
+  color: red;
+}
+
+.invalid {
+  border: red;
+}
+
+.valid {
+  border: black;
+}
