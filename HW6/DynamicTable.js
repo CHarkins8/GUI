@@ -59,6 +59,7 @@ $(document).ready(function() {
   $("#LastRow").on("input", function() { checkData(); });
   $("#FirstColumn").on("input", function() { checkData(); });
   $("#LastColumn").on("input",function() { checkData(); });
+
   //Button click
   $("#GenerateTable button").click(function(event) {
     var errors = 0;
@@ -86,9 +87,15 @@ function checkData() {
   // First Row
   if(minRow) { $("#FirstRow").removeClass("invalid").addClass("valid"); }
   else { $("#FirstRow").removeClass("valid").addClass("invalid"); }
+  if(minRow > 50 || minRow < -50) {
+    $("#FirstRow").removeClass("valid").addClass("invalid");
+  }
   // Last Row
   if(maxRow) { $("#LastRow").removeClass("invalid").addClass("valid"); }
   else { $("#LastRow").removeClass("valid").addClass("invalid"); }
+  if(maxRow > 50 || maxRow < -50) {
+    $("#LastRow").removeClass("valid").addClass("invalid");
+  }
   // Both Rows
   if(minRow && maxRow && (minRow > maxRow)) {
     $("#FirstRow").removeClass("valid").addClass("invalid");
@@ -98,9 +105,15 @@ function checkData() {
   // First Column
   if(minColumn) { $("#FirstColumn").removeClass("invalid").addClass("valid"); }
   else { $("#FirstColumn").removeClass("valid").addClass("invalid"); }
+  if(minColumn > 50 || minColumn < -50) {
+    $("#FirstColumn").removeClass("valid").addClass("invalid");
+  }
   // Last Column
   if(maxColumn) { $("#LastColumn").removeClass("invalid").addClass("valid"); }
   else { $("#LastColumn").removeClass("valid").addClass("invalid"); }
+  if(maxColumn > 50 || maxColumn < -50) {
+    $("#LastColumn").removeClass("valid").addClass("invalid");
+  }
   // Both Columns
   if(minColumn && maxColumn && (minColumn > maxColumn)) {
     $("#FirstColumn").removeClass("valid").addClass("invalid");
