@@ -22,7 +22,7 @@ form {
 /* Show input in nice format */
 input {
   display: block;
-  max-width: 100px;
+  max-width: 500px;
 }
 .ui-slider {
   width: 500px;
