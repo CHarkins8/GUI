@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="HW7Test.css">
+        <script type="text/javascript" src="HW7Test.js"></script>
+    </head>
+    <body>
+        <div class="mainbox">
+            <h1>
+                <b style="color:#9ee0ff;">jQuery Tab</b> Add, Delete and Sorting Example
+            </h1>
+            <div id="tabs">
+                <ul>
+                    <li id="1"><a href="#tab-1">Default</a></li>
+                </ul>
+                <div id="tab-1">
+                    <p>
+                        Default Tab Content
+                    </p>
+                </div>
+            </div>
+            <p>
+                <button id="showDialog" class="ui-button ui-widget ui-corner-all">+ Add Tab</button>
+                <button id="removeTabs" title="Click to Remove Active Tab" class="ui-button ui-widget ui-corner-all">x Remove Tab</button>
+                <button id="showSortable" class="ui-button ui-widget ui-corner-all">Get Sort Order</button>
+            </p>
+            <p style="margin-top:50px;">
+                By Darshan Shah <a href="https://www.c-sharpcorner.com/members/darshan-shah" target="_blank">https://www.c-sharpcorner.com/members/darshan-shah</a>
+            </p>
+        </div>
+
+        <div id="divDialog" style="display:none;padding:10px;">
+            <div>
+                <input type="text" required class="txt" placeholder="Enter new tab name" />
+            </div>
+
+            <div>
+                <button type="button" id="addTabs" class="ui-button ui-widget ui-corner-all">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>

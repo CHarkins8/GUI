@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>jQuery UI Tab : Add and Remove Tabs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+       <script>
+        $(document).ready(function() {
+         $("#demoTabs").tabs();
+         $("#removeTabs").click(function() {
+        var tabIndex = parseInt($("#indexValue").val(), 10);
+        var tab = $( "#demoTabs" ).find(".ui-tabs-nav li:eq(" + tabIndex + ")").remove();
+        $("#demoTabs").tabs("refresh");
+      });
+      $("#addTabs").click(function() {
+        $("<li><a href='myTab.txt'>New Tab</a></li>").appendTo("#demoTabs .ui-tabs-nav");
+        $("#demoTabs").tabs("refresh");
+      });
+
+        });
+    </script>
+</head>
+<body>
+
+
+<div id="demoTabs">
+    <ul>
+      <li><a href="#coach">Coach</a></li>
+      <li><a href="#bike">Bike</a></li>
+      <li><a href="#truck">Truck</a></li>
+    </ul>
+    <div id="coach">coach</div>
+    <div id="bike">bike</div>
+    <div id="truck">truck</div>
+  </div>
+  <br>
+   <label>Index No of Tab to be Removed (zero based):</label>
+  <input for="indexValue" id="indexValue"><p>
+  <button type="button" id="removeTabs">Remove!</button>
+  <button type="button" id="addTabs">Add a new tab!</button>
+
+
+
+</body>
+</html>

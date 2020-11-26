@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+ Cassandra Harkins
+ Cassandra_Harkins@student.uml.edu
+ Student at UMass Lowell in 91.61 GUI Programming I
+ Help from https://www.c-sharpcorner.com/members/darshan-shah
+ Help from http://www.tutorialspark.com/jqueryUI/jQuery_UI_Tabs_Methods_Adding_Removing_Tabs.php
+-->
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CHarkins Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.js"></script>
+    <script type="text/javascript" src="DynamicTable.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#tabs").tabs();
+      $("#removeTable").click(function() {
+        var tabIndex = parseInt($("#indexValue").val(), 10);
+        var tab = $( "#tabs" ).find(".ui-tabs-nav li:eq(" + tabIndex + ")").remove();
+        $("#tabs").tabs("refresh");
+      });
+      $("#addTable").click(function() {
+        $("<li><a href='myTab.txt'>New Tab</a></li>").appendTo("#tabs .ui-tabs-nav");
+        $("#tabs").tabs("refresh");
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div id="inputs">
+    </div>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tab-1">Table1</a></li>
+        <li><a href="#tab-2">Table2</a></li>
+        <li><a href="#tab-3">Table3</a></li>
+      </ul>
+      <div id="tab-1">
+        No table created.
+      </div>
+      <div id="tab-2">
+        No table created.
+      </div>
+      <div id="tab-3">
+        No table created.
+      </div>
+    </div>
+    <div>
+      <label>Index No of Tab to be Removed (zero based):</label>
+      <input for="indexValue" id="indexValue"><p>
+      <button type="button" id="addTable">Add Tab</button>
+      <button type="button" id="removeTable">Remove Tab</button>
+    </div>
+    <div id="error"><p>  </p></div>
+
+  </body>
+</html>

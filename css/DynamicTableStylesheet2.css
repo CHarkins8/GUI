@@ -1,0 +1,68 @@
+
+
+/* Gives background */
+html {
+  background-image: linear-gradient(180deg, #e7e4f1, #aa92bd);
+  background-repeat: repeat-x;
+  background-color: #aa92bd;
+}
+body {
+    background-image: linear-gradient(180deg, #e7e4f1, #aa92bd);
+    background-repeat: repeat-x;
+    background-color: #aa92bd;
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* Margin for form */
+form {
+  margin: 10px;
+}
+
+/* Show input in nice format */
+input {
+  display: block;
+}
+
+/*Border and text align only for the Multiplication Table*/
+table, tr, td, th{
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    margin: auto;
+}
+
+/*For all tables, set width and overflow */
+table {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  margin: auto;
+}
+div {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+tr, td, th{
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  color:black;
+}
+
+th {
+  font-size: medium;
+  background: black;
+  color: white;
+}

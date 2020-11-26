@@ -1,0 +1,39 @@
+
+.mainbox {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: Arial;
+}
+
+    .mainbox h1 {
+        background-color: #808080;
+        color: white;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .mainbox p {
+        text-align: center;
+    }
+
+.ui-widget-overlay.custom-overlay {
+    background-color: black;
+    background-image: none;
+    opacity: 0.7;
+    z-index: 1040;
+}
+
+.txt{
+    border:solid 1px #eee;
+    padding:5px;
+    outline:none;
+    margin-bottom:10px;
+}
+
+.txt:focus {
+    border:solid 1px #0094ff;
+
+}

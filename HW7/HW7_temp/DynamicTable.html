@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!--
+ Cassandra Harkins
+ Cassandra_Harkins@student.uml.edu
+ Student at UMass Lowell in 91.61 GUI Programming I
+-->
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CHarkins Webpage</title>
+    <link rel="stylesheet" type="text/css" href="../css/DynamicTableStylesheet2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.js"></script>
+    <script type="text/javascript" src="DynamicTable.js"></script>
+  </head>
+  <body>
+<!-- Form that takes information FirstRow/LastRow FirstColumn/LastColumn -->
+    <form id="Form" method="post" action="">
+      <div>
+        <label for="FirstRow">Row Min</label>
+        <input type="number" id="FirstRow" min="-50" max="50"></input>
+        <span class="error">This field is required and must be less than Row Max</span>
+      </div>
+      <div>
+        <label for="LastRow">Row Max</label>
+        <input type="number" id="LastRow" min="-50" max="50"></input>
+        <span class="error">This field is required and must be greater than Row Min</span>
+      </div>
+      <div>
+        <label for="FirstColumn">Column Min</label>
+        <input type="number" id="FirstColumn" min="-50" max="50"></input>
+        <span class="error">This field is required and must be less than Column Max</span>
+      </div>
+      <div>
+        <label for="LastColumn">Column Max</label>
+        <input type="number" id="LastColumn" min="-50" max="50"></input>
+        <span class="error">This field is required and must be greater than Column Min</span>
+      </div>
+      <!-- Button that is used to call function and generate table -->
+      <div id="GenerateTable">
+        <button type="submit">Generate Table</button>
+      </div>
+    </form>
+
+<!-- Default table values that can be overwritten by javascript -->
+    <table id="MultTable"></table>
+  </body>
+</html>
