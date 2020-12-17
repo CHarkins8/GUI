@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!--
+ Cassandra Harkins
+ Cassandra_Harkins@student.uml.edu
+ Student at UMass Lowell in 91.61 GUI Programming I
+ Help from: https://www.elated.com/drag-and-drop-with-jquery-your-essential-guide/
+-->
+
+
+<html>
+    <head>
+        <title>CHarkins ScrabbleBoard</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="scrabble.js"></script>
+        <link rel="stylesheet" href="../css/scrabble.css"/>
+  	</head>
+  	<body>
+        <div>
+          <input id="Restart" type="button" value="Restart Game" onclick="init()"></input>
+          <input id="RefreshTiles" type="button" value="Reset Tile Rack" onclick="resetTiles()"></input>
+          <input id="Score" type="button" value="Tally Score" onclick="tallyScore()"></input>
+        </div>
+        <br>
+        <div id="TotalScore">Total Score: </div>
+        <div id="ScrabbleGame">
+            <div id="ScrabbleBoard">
+                <!-- Formatted to remove inline spaces -->
+                <div id="boardTile-0" class="boardTile">
+                </div><div id="boardTile-1" class="boardTile doubleLetter">
+                </div><div id="boardTile-2" class="boardTile">
+                </div><div id="boardTile-3" class="boardTile">
+                </div><div id="boardTile-4" class="boardTile">
+                </div><div id="boardTile-5" class="boardTile doubleWord">
+                </div><div id="boardTile-6" class="boardTile">
+                </div><div id="boardTile-7" class="boardTile">
+                </div><div id="boardTile-8" class="boardTile doubleLetter">
+                </div><div id="boardTile-9" class="boardTile"> </div>
+            </div>
+            <div id="TileRack"></div>
+        </div>
+    </body>
+</html>
